@@ -6,7 +6,7 @@ import { userdb } from './mongo.js';
 const app = express();
 const port = 5000;
 // app.use(express.static('frontend'));
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 // Connect to MongoDB
